@@ -1,5 +1,5 @@
 # Migrate LocalStorage
-
+*ios only
 This plugin solve localstorage(websql,indexeddb,localstorage) lost when Updating from Ionic 3 to Ionic 4 
 due to UIWebView update to  WKWebView.
 All related files will be copied over automatically during startup so the user can simply pick up where they left of.
