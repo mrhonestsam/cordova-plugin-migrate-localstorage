@@ -1,16 +1,17 @@
 # Migrate LocalStorage
 
-This plugin can be used in conjunction with
-[cordova-plugin-wkwebview-engine](https://github.com/apache/cordova-plugin-wkwebview-engine)
-to persist LocalStorage data when migrating from `UIWebView` to `WKWebView`. All related
-files will be copied over automatically during startup so the user can simply pick up where they
-left of.
+This plugin solve localstorage(websql,indexeddb,localstorage) lost when Updating from Ionic 3 to Ionic 4 
+due to UIWebView update to  WKWebView.
+All related files will be copied over automatically during startup so the user can simply pick up where they left of.
+
 
 ## How to use
 
 Simply add the plugin to your cordova project via the cli:
+
+cordoa plugin add cordova-plugin-ionic-webview
 ```sh
-cordoa plugin add cordova-plugin-migrate-localstorage
+cordoa plugin add https://github.com/mrhonestsam/cordova-plugin-migrate-localstorage
 ```
 
 ## Notes
@@ -19,7 +20,7 @@ cordoa plugin add cordova-plugin-migrate-localstorage
 yet. This means that if you've run your app with `WKWebView` before this plugin will likely not work.
 To test if data is migrated over correctly:
     1. Delete the app from your emulator or device
-    2. Remove the `cordova-plugin-wkwebview-engine` and `cordova-plugin-migrate-localstorage` plugins
+    2. Remove the `cordova-plugin-ionic-webview` and `cordova-plugin-migrate-localstorage` plugins
     3. Run your app and store some data in LocalStorage
     4. Add both plugins back
     5. Run your app again. Your data should still be there!
