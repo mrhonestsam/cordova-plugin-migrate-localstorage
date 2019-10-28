@@ -9,9 +9,9 @@ All related files will be copied over automatically during startup so the user c
 
 Simply add the plugin to your cordova project via the cli:
 
-cordoa plugin add cordova-plugin-ionic-webview
+cordova plugin add cordova-plugin-ionic-webview
 ```sh
-cordoa plugin add https://github.com/mrhonestsam/cordova-plugin-migrate-localstorage
+cordova plugin add https://github.com/mrhonestsam/cordova-plugin-migrate-localstorage
 ```
 
 ## Notes
